@@ -17,26 +17,28 @@
             <div class="home">
 
                 <h1>HOME</h1>
-                <p class="score"></p>
+                <p class="home-score">0</p>
                 <div class="buttons flex">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="homeOne()" class="home-one">+1</button>
+                    <button onclick="homeTwo()" class="home-two">+2</button>
+                    <button onclick="homeThree()" class="home-three">+3</button>
                 </div>
 
             </div>
             
             <div class="guest">
                 <h1>GUEST</h1>
-                <p class="score"></p>
+                <p class="guest-score">0</p>
                 <div class="buttons flex">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="guestOne()" class="guest-one">+1</button>
+                    <button onclick="guestTwo()" class="guest-two">+2</button>
+                    <button onclick="guestThree()" class="guest-three">+3</button>
                 </div>
             </div>
 
         </div>
+
+        <button class="new-game" onclick="reset()">New Game</button>
 
     </div>
     
