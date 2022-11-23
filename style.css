@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: Verdana;
+    src: url(./Font/verdana-bold.ttf)
+}
+
+@font-face {
+    font-family: Cursed Timer;
+    src: url(./Font/CursedTimerULiL.ttf);
+}
+
 html{
     width: 100vw; height: 100vh;
 }
@@ -12,6 +22,79 @@ body, .container{
     width: 100%; height: 100%;
 }
 
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
-    background-color: red;
+    background: url('./image.jpg') no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.scorecard{
+    width: 575px;
+    height: 385px;
+    background-color: #ed174b;
+}
+
+.home{
+    margin-right: 53px;
+}
+
+.guest{
+    margin-left: 53px;
+}
+
+h1{
+    width: 149px;
+    height: 36px;
+    font-size: 40px;
+    line-height: 36px;
+    font-family: Verdana;
+    color: white;
+    margin-bottom: 21px;
+}
+
+.home-score, .guest-score{
+    width: 155px;
+    height: 120px;
+    background-color: #006ab6;
+    font-family: Cursed Timer;
+    font-size: 90px;
+    line-height: 127px;
+    text-align: center;
+    color: white;
+    margin-bottom: 26px;
+}
+
+.buttons{
+    width: 155px;
+    height: 45px;
+}
+
+button{
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: Cursed Timer;
+    color: white;
+    border-color: white; 
+    margin: 0px auto;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.new-game{
+    background-color: #ed174b;
+    width: 200px;
+    font-family: Verdana;
+    border: none;
+    height: 55px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 22px;
 }
